@@ -1,5 +1,5 @@
 {% set name = "pythonfinder" %}
-{% set version = "1.2.8" %}
+{% set version = "1.2.9" %}
 
 
 package:
@@ -8,11 +8,11 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pythonfinder-{{ version }}.tar.gz
-  sha256: e3ea90d327f2ff61a692af9326deced042bb27f6fd562fc788637abee9bd62d9
+  sha256: 1a7f756c7f1b47558c9287bce87298c33760ded4552f06b82c28f3f0eee7b91f
 
 build:
-  number: 1
-  skip: true   # [py==30 or py==31 or py==32 or py==33]
+  number: 0
+  skip: true  # [py==30 or py==31 or py==32 or py==33]
   entry_points:
     - pyfinder = pythonfinder.cli:cli
   script: {{ PYTHON }} -m pip install . -vv
