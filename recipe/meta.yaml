@@ -11,7 +11,7 @@ source:
   sha256: d1c88d048d48736a198c74bd6f3dddf48361e7e2cdee01a9dddc7a952b63aa43
 
 build:
-  number: 1
+  number: 2
   skip: true  # [py==30 or py==31 or py==32 or py==33]
   entry_points:
     - pyfinder = pythonfinder.cli:cli
