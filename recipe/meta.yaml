@@ -25,12 +25,13 @@ requirements:
     - pip
     - python
     - setuptools >=41.0
+    - packaging 21.3
   run:
     - attrs
     - backports.functools_lru_cache  # [py==27]
     - cached-property
     - click
-    - packaging
+    - packaging 21.3
     - pathlib2  # [py<35]
     - python
     - six
