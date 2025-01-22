@@ -26,6 +26,7 @@ requirements:
   run:
     - python >=${{ python_min }}
     - packaging >=22.0
+    - click
 
 tests:
   - python:
