@@ -1,6 +1,6 @@
 context:
   name: pythonfinder
-  version: 2.1.0
+  version: "3.0.0"
 
 package:
   name: ${{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/pythonfinder-${{ version }}.tar.gz
-  sha256: bdd5352d8367ebd2c106988861e2583d412ab897aa81b783825ab5d6fd351c56
+  sha256: 711d8c465b90ac4d0eb5b5aa3e559b71ad5d012f79be7fb0a404cc981b3c684e
 
 build:
   number: 0
